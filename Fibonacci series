@@ -1,0 +1,12 @@
+def fibonacci_series(num):
+  series = []
+  a, b = 0, 1
+
+  while len(series) < num:
+    series.append(a)
+    a, b = b, a+b
+  return series
+
+number = int(input())
+fib_series = fibonacci_series(number)
+print(fib_series)
